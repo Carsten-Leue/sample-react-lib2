@@ -7,7 +7,6 @@
       "esnext"
     ],
     "skipLibCheck": true,
-    "isolatedModules": false,
     "esModuleInterop": true,
     "outDir": "./dist",
     "allowSyntheticDefaultImports": true,

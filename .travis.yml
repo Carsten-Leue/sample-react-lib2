@@ -5,7 +5,6 @@ cache: yarn
 install:
   - yarn install
 script:
-  - yarn test
   - yarn build
 before_deploy:
   - cd dist
