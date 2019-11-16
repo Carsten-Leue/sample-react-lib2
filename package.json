@@ -1,0 +1,61 @@
+{
+  "name": "sample-react-lib1",
+  "version": "0.1.4",
+  "private": false,
+  "keywords": [
+    "library",
+    "ng-packagr",
+    "react"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Carsten Leue",
+    "email": "carsten.leue+github@gmail.com"
+  },
+  "sideEffects": false,
+  "module": "public_api.js",
+  "typings": "public_api.d.ts",
+  "scripts": {
+    "build": "tsc --project tsconfig.json --declaration",
+    "postbuild": "cpx \"src/**/*.scss\" ./dist/ && cpx package.json ./dist/",
+    "eject": "react-scripts eject",
+    "start": "react-scripts start",
+    "test": "react-scripts test"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "24.0.23",
+    "@types/node": "12.12.8",
+    "@types/react": "16.9.11",
+    "@types/react-dom": "16.9.4",
+    "cpx": "^1.5.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.2.0",
+    "rxjs": "^6.5.3",
+    "typescript": ">=3.4 <3.6",
+    "zone.js": "^0.10.2"
+  },
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
